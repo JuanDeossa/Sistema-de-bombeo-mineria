@@ -1,15 +1,22 @@
 import { Box, Button, Paper, Stack } from "@mui/material";
 import { Chart } from "../components/chart/Chart";
 import { BasicTable } from "../components/basicTable/BasicTable";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Form1 } from "../components/form1/Form1";
+import { getAllEquipments, getEquipmentByPK } from "../utils/backend/api/GET";
+import { initialProcessValues } from "../utils/constants";
 
 export const MainPage = () => {
-  const [constants, setConstants] = useState({
-    D: 0.1776,
-    L: 750,
-    C: 110,
-    R: 5994.862241,
+  const [dataToChart, setDataToChart] = useState({
+    GPM: null,
+    MCA: null,
+    mca: null,
   });
+
+  useEffect(() => {
+    console.log(getAllEquipments());
+    console.log(getEquipmentByPK("Tsurumi-6110"));
+  }, []);
 
   return (
     <Stack
@@ -22,14 +29,21 @@ export const MainPage = () => {
       borderBottom="0px"
     >
       <Paper elevation={4}>
-        <Chart />
+        <Chart
+          data={{
+            DATA_X: dataToChart?.GPM,
+            DATA_Y1: dataToChart?.MCA,
+            DATA_Y2: dataToChart?.mca,
+          }}
+        />
       </Paper>
+      <Form1 setDataToChart={setDataToChart} />
       {/* <Paper elevation={4}>
         <Box overflow="auto">
           <BasicTable />
         </Box>
       </Paper> */}
-      <Button variant="contained">Calcular</Button>
+      {/* <Button variant="contained">Calcular</Button> */}
     </Stack>
   );
 };

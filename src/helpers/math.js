@@ -1,1 +1,2 @@
-export const round = (num, presicion = 2) => parseFloat(num.toFixed(presicion));
+export const round = (num, presicion = 2) =>
+  parseFloat(parseFloat(num).toFixed(presicion));

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "Tsurumi-6110",
+    "name": "Tsurumi 6110",
+    "values": [
+      {
+        "caudal": 4.63,
+        "presion": 16.19
+      },
+      {
+        "caudal": 9.42,
+        "presion": 16.06
+      },
+      {
+        "caudal": 14.05,
+        "presion": 15.93
+      },
+      {
+        "caudal": 18.73,
+        "presion": 15.76
+      },
+      {
+        "caudal": 23.53,
+        "presion": 15.53
+      },
+      {
+        "caudal": 28.16,
+        "presion": 15.17
+      },
+      {
+        "caudal": 33.0,
+        "presion": 14.48
+      },
+      {
+        "caudal": 38.29,
+        "presion": 13.46
+      }
+    ]
+  },
+  {
+    "id": "Tsurumi-8110",
+    "name": "Tsurumi 8110",
+    "values": [
+      {
+        "caudal": 4.63,
+        "presion": 16.19
+      },
+      {
+        "caudal": 9.42,
+        "presion": 16.06
+      },
+      {
+        "caudal": 14.05,
+        "presion": 15.93
+      },
+      {
+        "caudal": 18.73,
+        "presion": 15.76
+      },
+      {
+        "caudal": 23.53,
+        "presion": 15.53
+      },
+      {
+        "caudal": 28.16,
+        "presion": 15.17
+      },
+      {
+        "caudal": 33.0,
+        "presion": 14.48
+      },
+      {
+        "caudal": 38.29,
+        "presion": 13.46
+      }
+    ]
+  }
+]
