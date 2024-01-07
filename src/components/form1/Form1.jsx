@@ -20,11 +20,7 @@ import {
 const EQUIPMENTS = getAllEquipments();
 
 export const Form1 = ({ setDataToChart }) => {
-  const {
-    register,
-    control,
-    handleSubmit,
-  } = useForm({
+  const { register, control, handleSubmit } = useForm({
     defaultValues: {
       E: EQUIPMENTS[0].id,
       P: 100,
@@ -56,7 +52,7 @@ export const Form1 = ({ setDataToChart }) => {
 
     setDataToChart((prev) => ({
       ...prev,
-      eqName:res.name,
+      eqName: res.name,
       GPM: cauldalGPMArray,
       MCA: presionMCAArray,
       mca: presionMcaArray,
@@ -126,23 +122,11 @@ export const Form1 = ({ setDataToChart }) => {
               pattern: /^[0-9.]+$/,
             })}
           />
-          {/* <TextField
-            id="outlined-basic"
-            label=""
-            variant="outlined"
-            type="text"
-            size="small"
-            {...register("R", {
-              required: true,
-              pattern: /^[0-9.]+$/,
-              disabled: true,
-            })}
-          /> */}
           <Button type="submit" variant="contained">
             Calcular
           </Button>
         </Stack>
-        <DevTool control={control} />
+        {/* <DevTool control={control} /> */}
       </form>
     </Box>
   );
