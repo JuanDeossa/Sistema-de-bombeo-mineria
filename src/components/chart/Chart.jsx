@@ -1,11 +1,13 @@
 /* eslint-disable react/prop-types */
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { LineChart } from "@mui/x-charts";
+import modStyles from './Chart.module.css'
+
 
 export const Chart = ({ data }) => {
-  const { DATA_X, DATA_Y1, DATA_Y2, eqName } = data || {};
+  const { eqName, DATA_X, DATA_Y1, DATA_Y2, DATA_Y3 } = data || {};
   return (
-    <>
+    <div className={modStyles.Chart}>
       <Typography variant="h6" paddingLeft={2} paddingTop={1}>
         {eqName}
       </Typography>
@@ -27,8 +29,14 @@ export const Chart = ({ data }) => {
             showMark: false,
             label: "P (mca)",
           },
+          {
+            data: DATA_Y3 || [0, 1, 2, 3, 4, 5],
+            color: !DATA_Y3?.length ? "transparent" : "green",
+            showMark: false,
+            label: "Shaft Power (Kw)",
+          },
         ]}
       />
-    </>
+    </div>
   );
 };

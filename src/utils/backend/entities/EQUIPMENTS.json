@@ -3,76 +3,138 @@
     "id": "Tsurumi-6110",
     "name": "Tsurumi 6110",
     "values": [
-      {
-        "caudal": 4.63,
-        "presion": 16.19
-      },
-      {
-        "caudal": 9.42,
-        "presion": 16.06
-      },
-      {
-        "caudal": 14.05,
-        "presion": 15.93
-      },
-      {
-        "caudal": 18.73,
-        "presion": 15.76
-      },
-      {
-        "caudal": 23.53,
-        "presion": 15.53
-      },
-      {
-        "caudal": 28.16,
-        "presion": 15.17
-      },
-      {
-        "caudal": 33.0,
-        "presion": 14.48
-      },
-      {
-        "caudal": 38.29,
-        "presion": 13.46
-      }
+      { "caudal": 4.63, "presion": 16.19 },
+      { "caudal": 9.42, "presion": 16.06 },
+      { "caudal": 14.05, "presion": 15.93 },
+      { "caudal": 18.73, "presion": 15.76 },
+      { "caudal": 23.53, "presion": 15.53 },
+      { "caudal": 28.16, "presion": 15.17 },
+      { "caudal": 33.0, "presion": 14.48 },
+      { "caudal": 38.29, "presion": 13.46 }
+    ],
+    "efiicencia": [
+      { "caudal": 0, "power": 63.9 },
+      { "caudal": 100, "power": 73.55 },
+      { "caudal": 200, "power": 80.9 },
+      { "caudal": 300, "power": 89.7 },
+      { "caudal": 400, "power": 95.615 },
+      { "caudal": 500, "power": 99.2 },
+      { "caudal": 600, "power": 104 },
+      { "caudal": 700, "power": 105.8 }
     ]
   },
   {
     "id": "Tsurumi-8110",
     "name": "Tsurumi 8110",
     "values": [
-      {
-        "caudal": 4.63,
-        "presion": 16.19
-      },
-      {
-        "caudal": 9.42,
-        "presion": 16.06
-      },
-      {
-        "caudal": 14.05,
-        "presion": 15.93
-      },
-      {
-        "caudal": 18.73,
-        "presion": 15.76
-      },
-      {
-        "caudal": 23.53,
-        "presion": 15.53
-      },
-      {
-        "caudal": 28.16,
-        "presion": 15.17
-      },
-      {
-        "caudal": 33.0,
-        "presion": 14.48
-      },
-      {
-        "caudal": 38.29,
-        "presion": 13.46
-      }
+      { "caudal": 0, "presion": 11.274 },
+      { "caudal": 12.618, "presion": 11.1764 },
+      { "caudal": 25.23, "presion": 10.7843 },
+      { "caudal": 37.85, "presion": 10.46 },
+      { "caudal": 50.47, "presion": 10.29 },
+      { "caudal": 63.0902, "presion": 9.31 },
+      { "caudal": 75.40824, "presion": 8.62 },
+      { "caudal": 88.32627, "presion": 7.74 },
+      { "caudal": 100.9443, "presion": 5.68 },
+      { "caudal": 107.2533, "presion": 3.92 }
+    ],
+    "efiicencia": [
+      { "caudal": 0, "power": 11.274 },
+      { "caudal": 12.618, "power": 11.1764 },
+      { "caudal": 25.23, "power": 10.7843 },
+      { "caudal": 37.85, "power": 10.46 },
+      { "caudal": 50.47, "power": 10.29 },
+      { "caudal": 63.0902, "power": 9.31 },
+      { "caudal": 75.40824, "power": 8.62 },
+      { "caudal": 88.32627, "power": 7.74 },
+      { "caudal": 100.9443, "power": 5.68 },
+      { "caudal": 107.2533, "power": 3.92 }
+    ]
+  },
+  {
+    "id": "Tsurumi-4110",
+    "name": "Tsurumi 4110",
+    "values": [
+      { "caudal": 0, "presion": 22.54901 },
+      { "caudal": 3.15451, "presion": 22.2549 },
+      { "caudal": 6.30902, "presion": 22.0588 },
+      { "caudal": 9.46353, "presion": 21.8627 },
+      { "caudal": 12.618, "presion": 21.5686 },
+      { "caudal": 15.7725, "presion": 21.0784 },
+      { "caudal": 18.9271, "presion": 20.5882 },
+      { "caudal": 22.0816, "presion": 19.1176 },
+      { "caudal": 25.2361, "presion": 18.1372 },
+      { "caudal": 28.3906, "presion": 17.1568 },
+      { "caudal": 31.5451, "presion": 16.1764 },
+      { "caudal": 33.4378, "presion": 15.6862 }
+    ],
+    "efiicencia": [
+      { "caudal": 0, "power": 22.54901 },
+      { "caudal": 3.15451, "power": 22.2549 },
+      { "caudal": 6.30902, "power": 22.0588 },
+      { "caudal": 9.46353, "power": 21.8627 },
+      { "caudal": 12.618, "power": 21.5686 },
+      { "caudal": 15.7725, "power": 21.0784 },
+      { "caudal": 18.9271, "power": 20.5882 },
+      { "caudal": 22.0816, "power": 19.1176 },
+      { "caudal": 25.2361, "power": 18.1372 },
+      { "caudal": 28.3906, "power": 17.1568 },
+      { "caudal": 31.5451, "power": 16.1764 },
+      { "caudal": 33.4378, "power": 15.6862 }
+    ]
+  },
+  {
+    "id": "Tsurumi-LH645",
+    "name": "Tsurumi LH645",
+    "values": [
+      { "caudal": 0, "presion": 8.826 },
+      { "caudal": 6.309, "presion": 9.61 },
+      { "caudal": 12.618, "presion": 9.414 },
+      { "caudal": 18.927, "presion": 8.335 },
+      { "caudal": 25.236, "presion": 7.649 },
+      { "caudal": 31.545, "presion": 7.159 },
+      { "caudal": 37.854, "presion": 6.374 },
+      { "caudal": 44.163, "presion": 5.492 },
+      { "caudal": 49.21, "presion": 4.511 }
+    ],
+    "efiicencia": [
+      { "caudal": 0, "power": 8.826 },
+      { "caudal": 6.309, "power": 9.61 },
+      { "caudal": 12.618, "power": 9.414 },
+      { "caudal": 18.927, "power": 8.335 },
+      { "caudal": 25.236, "power": 7.649 },
+      { "caudal": 31.545, "power": 7.159 },
+      { "caudal": 37.854, "power": 6.374 },
+      { "caudal": 44.163, "power": 5.492 },
+      { "caudal": 49.21, "power": 4.511 }
+    ]
+  },
+  {
+    "id": "Rurhpumpen-4x11",
+    "name": "Rurhpumpen 4x11",
+    "values": [
+      { "caudal": 0, "presion": 0 },
+      { "caudal": 6, "presion": 13.72 },
+      { "caudal": 13, "presion": 26.47 },
+      { "caudal": 19, "presion": 37.25 },
+      { "caudal": 25, "presion": 45.09 },
+      { "caudal": 32, "presion": 50.98 },
+      { "caudal": 38, "presion": 53.92 },
+      { "caudal": 44.163, "presion": 54.91 },
+      { "caudal": 50, "presion": 54.7 },
+      { "caudal": 57, "presion": 52.2 }
+    ],
+    "efiicencia": [
+      { "caudal": 0, "power": 0 },
+      { "caudal": 6, "power": 13.72 },
+      { "caudal": 13, "power": 26.47 },
+      { "caudal": 19, "power": 37.25 },
+      { "caudal": 25, "power": 45.09 },
+      { "caudal": 32, "power": 50.98 },
+      { "caudal": 38, "power": 53.92 },
+      { "caudal": 44.163, "power": 54.91 },
+      { "caudal": 50, "power": 54.7 },
+      { "caudal": 57, "power": 52.2 }
     ]
   }
 ]

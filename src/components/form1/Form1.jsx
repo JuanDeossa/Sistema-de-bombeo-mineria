@@ -49,6 +49,7 @@ export const Form1 = ({ setDataToChart }) => {
     const presionMcaArray = equipmentProps?.values?.map(
       (value) => value?.presionMCA
     );
+    const efiArray = equipmentProps?.efiicencia?.map((value) => value?.power);
 
     setDataToChart((prev) => ({
       ...prev,
@@ -56,6 +57,7 @@ export const Form1 = ({ setDataToChart }) => {
       GPM: cauldalGPMArray,
       MCA: presionMCAArray,
       mca: presionMcaArray,
+      efi: efiArray,
     }));
   };
 

@@ -12,6 +12,7 @@ export const MainPage = () => {
     GPM: null,
     MCA: null,
     mca: null,
+    efi:null,
   });
 
   useEffect(() => {
@@ -36,6 +37,7 @@ export const MainPage = () => {
             DATA_X: dataToChart?.GPM,
             DATA_Y1: dataToChart?.MCA,
             DATA_Y2: dataToChart?.mca,
+            DATA_Y3: dataToChart?.efi,
           }}
         />:null}
       </Paper>
