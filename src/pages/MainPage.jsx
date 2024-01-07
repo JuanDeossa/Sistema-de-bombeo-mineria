@@ -8,6 +8,7 @@ import { initialProcessValues } from "../utils/constants";
 
 export const MainPage = () => {
   const [dataToChart, setDataToChart] = useState({
+    eqName:"",
     GPM: null,
     MCA: null,
     mca: null,
@@ -25,26 +26,20 @@ export const MainPage = () => {
       spacing={5}
       paddingTop={4}
       width={390}
-      border="1px solid gray"
+      // border="1px solid gray"
       borderBottom="0px"
     >
       <Paper elevation={4}>
-        <Chart
+        {dataToChart.GPM?<Chart
           data={{
             eqName:dataToChart?.eqName,
             DATA_X: dataToChart?.GPM,
             DATA_Y1: dataToChart?.MCA,
             DATA_Y2: dataToChart?.mca,
           }}
-        />
+        />:null}
       </Paper>
       <Form1 setDataToChart={setDataToChart} />
-      {/* <Paper elevation={4}>
-        <Box overflow="auto">
-          <BasicTable />
-        </Box>
-      </Paper> */}
-      {/* <Button variant="contained">Calcular</Button> */}
     </Stack>
   );
 };

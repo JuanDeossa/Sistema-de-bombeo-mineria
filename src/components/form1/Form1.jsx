@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { DevTool } from "@hookform/devtools";
 import {
   Box,
@@ -15,7 +16,6 @@ import {
   getAllEquipments,
   getEquipmentByPK,
 } from "../../utils/backend/api/GET";
-import { useEffect } from "react";
 
 const EQUIPMENTS = getAllEquipments();
 
@@ -24,7 +24,6 @@ export const Form1 = ({ setDataToChart }) => {
     register,
     control,
     handleSubmit,
-    formState: { isValid },
   } = useForm({
     defaultValues: {
       E: EQUIPMENTS[0].id,
@@ -45,11 +44,8 @@ export const Form1 = ({ setDataToChart }) => {
     };
     const { C, D, L, P, E } = newData;
     const R = round(10.67 * (1 / C ** 1.852) * (L / D ** 4.87), 6);
-    // console.log(newData, R);
-    // return
 
     const res = calculateResult({ P, R, E });
-    console.log(res)
     const equipmentProps = getEquipmentByPK(res.name);
 
     const cauldalGPMArray = res?.values?.map((value) => value?.cauldalGPM);
