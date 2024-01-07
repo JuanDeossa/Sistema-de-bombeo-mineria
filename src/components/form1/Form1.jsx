@@ -15,18 +15,23 @@ import {
   getAllEquipments,
   getEquipmentByPK,
 } from "../../utils/backend/api/GET";
+import { useEffect } from "react";
 
 const EQUIPMENTS = getAllEquipments();
 
 export const Form1 = ({ setDataToChart }) => {
-  const { register, control, handleSubmit, watch } = useForm({
+  const {
+    register,
+    control,
+    handleSubmit,
+    formState: { isValid },
+  } = useForm({
     defaultValues: {
       E: EQUIPMENTS[0].id,
       P: 100,
       D: initialProcessValues?.D,
       L: initialProcessValues?.L,
       C: initialProcessValues?.C,
-      R: initialProcessValues?.R,
     },
   });
 
@@ -37,10 +42,14 @@ export const Form1 = ({ setDataToChart }) => {
       D: round(data.D, 6),
       L: round(data.L, 6),
       C: round(data.C, 6),
-      R: round(data.R, 6),
     };
-    const res = calculateResult({ P: newData.P, R: newData.R, E: newData.E });
+    const { C, D, L, P, E } = newData;
+    const R = round(10.67 * (1 / C ** 1.852) * (L / D ** 4.87), 6);
+    // console.log(newData, R);
+    // return
 
+    const res = calculateResult({ P, R, E });
+    console.log(res)
     const equipmentProps = getEquipmentByPK(res.name);
 
     const cauldalGPMArray = res?.values?.map((value) => value?.cauldalGPM);
@@ -51,6 +60,7 @@ export const Form1 = ({ setDataToChart }) => {
 
     setDataToChart((prev) => ({
       ...prev,
+      eqName:res.name,
       GPM: cauldalGPMArray,
       MCA: presionMCAArray,
       mca: presionMcaArray,
@@ -120,17 +130,18 @@ export const Form1 = ({ setDataToChart }) => {
               pattern: /^[0-9.]+$/,
             })}
           />
-          <TextField
+          {/* <TextField
             id="outlined-basic"
-            label="R"
+            label=""
             variant="outlined"
             type="text"
             size="small"
             {...register("R", {
               required: true,
               pattern: /^[0-9.]+$/,
+              disabled: true,
             })}
-          />
+          /> */}
           <Button type="submit" variant="contained">
             Calcular
           </Button>

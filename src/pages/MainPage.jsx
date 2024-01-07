@@ -14,8 +14,8 @@ export const MainPage = () => {
   });
 
   useEffect(() => {
-    console.log(getAllEquipments());
-    console.log(getEquipmentByPK("Tsurumi-6110"));
+    // console.log(getAllEquipments());
+    // console.log(getEquipmentByPK("Tsurumi-6110"));
   }, []);
 
   return (
@@ -31,6 +31,7 @@ export const MainPage = () => {
       <Paper elevation={4}>
         <Chart
           data={{
+            eqName:dataToChart?.eqName,
             DATA_X: dataToChart?.GPM,
             DATA_Y1: dataToChart?.MCA,
             DATA_Y2: dataToChart?.mca,
