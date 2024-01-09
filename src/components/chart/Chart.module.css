@@ -1,4 +1,19 @@
-.Chart tspan{
+.Chart tspan {
   font-size: 12px;
   font-weight: bold;
 }
+rect + text {
+  display: none !important;
+}
+g > rect {
+  display: none !important;
+}
+thead p::after {
+  content: " GPM";
+  font-weight: bold;
+}
+
+/*
+MuiPopper-root css-sfv08n-MuiChartsTooltip-root
+MuiChartsTooltip-table css-2hvfka-MuiChartsTooltip-table
+*/
