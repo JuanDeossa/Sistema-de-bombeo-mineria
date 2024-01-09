@@ -62,7 +62,7 @@ export const Form1 = ({ setDataToChart }) => {
   };
 
   return (
-    <Box width={300}>
+    <Box width={300} paddingBottom={5}>
       <form onSubmit={handleSubmit(submitAction)}>
         <Stack direction="column" spacing={2}>
           <TextField
